@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="activiti-repos2" />
+      <option name="name" value="Activiti Repository 2" />
+      <option name="url" value="https://app.camunda.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ali-maven" />
+      <option name="name" value="ali repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-main-repository" />
+      <option name="name" value="maven main repository" />
+      <option name="url" value="https://repo1.maven.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="qrcode3" />
+      <option name="name" value="qrcode3" />
+      <option name="url" value="http://develop.centit.com/nexus/content/repositories/centit-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss-cache" />
+      <option name="name" value="jboss-cache" />
+      <option name="url" value="http://repository.jboss.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="mvnsearch" />
+      <option name="name" value="mvnsearch Maven Repository" />
+      <option name="url" value="http://www.mvnsearch.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ibiblio" />
+      <option name="name" value="ibiblio Maven Repository" />
+      <option name="url" value="http://www.ibiblio.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="mirrors.ibiblio" />
+      <option name="name" value="mirrors.ibiblio Maven Repository" />
+      <option name="url" value="http://mirrors.ibiblio.org/pub/mirrors/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="activiti-repos" />
+      <option name="name" value="Activiti Repository" />
+      <option name="url" value="https://maven.alfresco.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="spring-milestones" />
+      <option name="name" value="Spring Milestones" />
+      <option name="url" value="https://repo.spring.io/milestone" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="repo.springsource.org" />
+      <option name="name" value="repo.springsource.org-releases" />
+      <option name="url" value="http://repo.springsource.org/libs-milestone-local" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+  </component>
+</project>

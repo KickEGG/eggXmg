@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.geekbang.projects</groupId>
+        <artifactId>user-platform</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>user-web</artifactId>
+    <name>User Web Application ${revision}</name>
+    <packaging>war</packaging>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.geekbang.projects</groupId>
+            <artifactId>my-web-mvc</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <!-- Servlet API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Tomcat Maven 插件用于构建可执行 war -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.1</version>
+                <executions>
+                    <execution>
+                        <id>tomcat-run</id>
+                        <goals>
+                            <!-- 最终打包成可执行的jar包 -->
+                            <goal>exec-war-only</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <!-- ServletContext 路径 -->
+                            <path>/</path>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- 代码库 -->
+    <repositories>
+        <repository>
+            <id>ali-maven</id>
+            <name>ali repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <!--            <releases>-->
+            <!--                <enabled>true</enabled>-->
+            <!--            </releases>-->
+        </repository>
+        <repository>
+            <id>qrcode3</id>
+            <name>qrcode3</name>
+            <url>http://maven.icm.edu.pl/artifactory/repo</url>
+        </repository>
+        <repository>
+            <id>maven-main-repository</id>
+            <name>maven main repository</name>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>activiti-repos</id>
+            <name>Activiti Repository</name>
+            <url>https://maven.alfresco.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>activiti-repos2</id>
+            <name>Activiti Repository 2</name>
+            <url>https://app.camunda.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>jboss-cache</id>
+            <name>jboss-cache</name>
+            <url>http://repository.jboss.org/maven2</url>
+        </repository>
+        <repository>
+            <id>mvnsearch</id>
+            <name>mvnsearch Maven Repository</name>
+            <url>http://www.mvnsearch.org/maven2</url>
+        </repository>
+        <repository>
+            <id>ibiblio</id>
+            <name>ibiblio Maven Repository</name>
+            <url>http://www.ibiblio.org/maven2</url>
+        </repository>
+        <repository>
+            <id>mirrors.ibiblio</id>
+            <name>mirrors.ibiblio Maven Repository</name>
+            <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
+        </repository>
+
+        <repository>
+            <id>repo.springsource.org</id>
+            <name>repo.springsource.org-releases</name>
+            <url>http://repo.springsource.org/libs-milestone-local</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <!-- qrcode3 代码库 -->
+        <repository>
+            <id>qrcode3</id>
+            <name>qrcode3</name>
+            <url>http://develop.centit.com/nexus/content/repositories/centit-releases/</url>
+        </repository>
+    </repositories>
+
+</project>
